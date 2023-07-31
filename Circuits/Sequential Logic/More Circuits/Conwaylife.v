@@ -24,7 +24,7 @@ module top_module(
                     count = toroid[i + 1] + toroid[i + 15] + toroid[i + 16] + toroid[i + 17] + toroid[i - 1] + toroid[i - 15] + toroid[i - 16] + toroid[i - 17];
 
                 if (count == 2)
-                    q[i - 16] <= state[i - 16];
+                    q[i - 16] <= q[i - 16];
                 else if (count == 3)
                     q[i - 16] <= 1'b1;
                 else
